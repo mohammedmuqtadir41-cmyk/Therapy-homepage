@@ -23,12 +23,11 @@ const specialties = [
 
 export default function Specialties() {
   return (
-    <section className="bg-white px-8 py-24 md:px-20">
-      <div className="mx-auto grid max-w-[1200px] gap-16 md:grid-cols-3">
+    <section className="bg-white px-6 py-28 sm:px-8 md:px-16 md:py-36 lg:px-20">
+      <div className="mx-auto grid max-w-[1200px] gap-16 md:grid-cols-3 md:gap-12 lg:gap-20">
 
-        {/* Heading */}
         <div>
-          <h2 className="font-serif text-4xl font-normal leading-[1.3] text-[#17324d]">
+          <h2 className="font-serif text-5xl font-normal leading-[1.1] tracking-[-1px] text-[#17324d] md:text-6xl">
             Our{" "}
             <span className="italic text-[#83b9bd]">
               specialties
@@ -38,21 +37,20 @@ export default function Specialties() {
           </h2>
         </div>
 
-        {/* Specialty grid */}
-        <div className="col-span-2 grid grid-cols-1 gap-x-16 gap-y-24 md:grid-cols-2">
+        <div className="grid gap-x-12 gap-y-20 md:col-span-2 md:grid-cols-2 lg:gap-x-16 lg:gap-y-24">
           {specialties.map((specialty) => (
             <article key={specialty.title}>
-              <h3 className="font-serif text-2xl font-normal text-[#17324d]">
+              <h3 className="font-serif text-3xl font-normal text-[#17324d]">
                 {specialty.title}
               </h3>
 
-              <p className="mt-8 text-[16px] leading-8 text-[#17324d]">
+              <p className="mt-7 text-[14px] leading-7 text-[#17324d] md:text-[15px] md:leading-8">
                 {specialty.description}
               </p>
 
               <a
                 href="#"
-                className="mt-6 inline-block border-b border-[#404040] pb-2 text-[12px] tracking-[1.5px] text-[#404040]"
+                className="mt-6 inline-block border-b border-[#404040] pb-2 text-[11px] tracking-[2px] text-[#404040]"
               >
                 LEARN MORE
               </a>
