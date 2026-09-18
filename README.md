@@ -1,36 +1,109 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Dr. Maya Reynolds - Therapy Homepage
 
-## Getting Started
+A redesigned therapy practice homepage built as part of a frontend development assignment.
 
-First, run the development server:
+The project started by recreating the structure and layout of the original Conejo Valley Counseling homepage and was then redesigned with a completely new visual direction, content, imagery, and a custom "Our Office" section.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Assignment
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Original Website
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+https://www.conejovalleycounseling.com/home
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Objective
 
-## Learn More
+The assignment required:
 
-To learn more about Next.js, take a look at the following resources:
+- Cloning the original homepage structure and layout
+- Redesigning the page with a new theme
+- Replacing the original copy and imagery
+- Maintaining the overall layout flow of the original homepage
+- Creating one completely new custom section that was not present in the original template
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Custom Section
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+A new **Our Office** section was added to showcase Dr. Maya Reynolds' physical practice space.
 
-## Deploy on Vercel
+The section includes:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Santa Monica office information
+- In-person therapy availability
+- Secure telehealth availability across California
+- Office environment and atmosphere
+- Office imagery provided in the therapist profile
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Design
+
+The redesigned website uses a calm, editorial visual direction created specifically for a private therapy practice.
+
+### Visual System
+
+- Warm ivory backgrounds
+- Deep forest green
+- Muted sage accents
+- Soft sand tones
+- Serif display typography
+- Clean sans-serif body typography
+- Generous whitespace
+- Minimal borders and dividers
+- Editorial-style image layouts
+- Responsive layouts for desktop and mobile
+
+## Sections
+
+The homepage includes:
+
+1. Header & Navigation
+2. Hero
+3. Introduction
+4. Who I Work With
+5. Story / About
+6. How We Work Together
+7. Honoring Your Story
+8. Our Office - Custom Section
+9. Specialties
+10. FAQ
+11. Appointment CTA
+12. Contact
+13. Footer
+
+## Tech Stack
+
+- Next.js
+- React
+- JavaScript
+- Tailwind CSS
+- HTML
+- CSS
+- Git & GitHub
+- Vercel
+
+## Project Structure
+
+```text
+src/
+├── app/
+│   ├── page.js
+│   ├── layout.jsx
+│   ├── globals.css
+│   └── icon.png
+│
+└── components/
+    ├── Header.jsx
+    ├── Hero.jsx
+    ├── IntroSection.jsx
+    ├── WhoWeHelp.jsx
+    ├── StorySection.jsx
+    ├── HowWeWork.jsx
+    ├── HonoringStory.jsx
+    ├── OurOffice.jsx
+    ├── Specialties.jsx
+    ├── FAQSection.jsx
+    ├── AppointmentCTA.jsx
+    ├── ContactSection.jsx
+    └── Footer.jsx
+
+public/
+└── Images/
+    ├── office1.jpeg
+    └── office2.jpeg
