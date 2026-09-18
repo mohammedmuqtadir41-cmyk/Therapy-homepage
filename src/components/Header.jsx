@@ -5,6 +5,7 @@ import { useState } from "react";
 const navLinks = [
   ["ABOUT", "#about"],
   ["APPROACH", "#approach"],
+  ["OFFICE", "#office"],
   ["SPECIALTIES", "#specialties"],
   ["EMDR", "#emdr"],
   ["FAQS", "#faqs"],
@@ -16,7 +17,6 @@ export default function Header() {
   return (
     <header className="relative z-50 bg-[#f7f4ee]">
       <div className="mx-auto flex min-h-[105px] max-w-[1280px] items-center justify-between px-6 md:min-h-[120px] md:px-10 lg:px-12">
-
         <a href="#" className="flex flex-col">
           <span className="font-serif text-[27px] leading-none tracking-[-1px] text-[#243b36] sm:text-[32px] md:text-[35px]">
             Dr. Maya Reynolds

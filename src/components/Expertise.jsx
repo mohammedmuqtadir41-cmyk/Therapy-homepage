@@ -1,14 +1,54 @@
 const expertise = [
-  ["01", "Anxiety", "Racing thoughts, worry, tension, and the feeling that your mind never switches off."],
-  ["02", "Panic", "Understanding panic symptoms and building a greater sense of safety and control."],
-  ["03", "Trauma", "Carefully processing experiences that continue to affect how you feel and respond."],
-  ["04", "Burnout", "Moving beyond survival mode and finding a pace that is actually sustainable."],
-  ["05", "Perfectionism", "Exploring the pressure to perform, achieve, and always get things right."],
-  ["06", "Chronic Stress", "Understanding the patterns that keep your mind and body continually on alert."],
-  ["07", "Overthinking", "Creating space between your thoughts and the reactions they can create."],
-  ["08", "Emotional Regulation", "Developing steadier and more compassionate ways to work with difficult emotions."],
-  ["09", "Relationships", "Understanding patterns of connection, boundaries, attachment, and communication."],
-  ["10", "Self-Worth", "Building a relationship with yourself that is less dependent on achievement or approval."],
+  [
+    "01",
+    "Anxiety",
+    "Racing thoughts, worry, tension, and the feeling that your mind never switches off.",
+  ],
+  [
+    "02",
+    "Panic",
+    "Understanding panic symptoms and building a greater sense of safety and control.",
+  ],
+  [
+    "03",
+    "Trauma",
+    "Carefully processing experiences that continue to affect how you feel and respond.",
+  ],
+  [
+    "04",
+    "Burnout",
+    "Moving beyond survival mode and finding a pace that is actually sustainable.",
+  ],
+  [
+    "05",
+    "Perfectionism",
+    "Exploring the pressure to perform, achieve, and always get things right.",
+  ],
+  [
+    "06",
+    "Chronic Stress",
+    "Understanding the patterns that keep your mind and body continually on alert.",
+  ],
+  [
+    "07",
+    "Overthinking",
+    "Creating space between your thoughts and the reactions they can create.",
+  ],
+  [
+    "08",
+    "Emotional Regulation",
+    "Developing steadier and more compassionate ways to work with difficult emotions.",
+  ],
+  [
+    "09",
+    "Relationships",
+    "Understanding patterns of connection, boundaries, attachment, and communication.",
+  ],
+  [
+    "10",
+    "Self-Worth",
+    "Building a relationship with yourself that is less dependent on achievement or approval.",
+  ],
 ];
 
 export default function Expertise() {
@@ -16,7 +56,6 @@ export default function Expertise() {
     <section className="bg-[#243b36] px-6 py-24 text-[#f7f4ee] sm:px-8 md:px-16 md:py-32 lg:px-20">
       <div className="mx-auto max-w-[1200px]">
         <div className="grid gap-14 md:grid-cols-[0.8fr_1.2fr] md:gap-20">
-
           <div>
             <p className="text-[11px] uppercase tracking-[3px] text-[#b8c9c1]">
               Areas of focus
@@ -57,7 +96,6 @@ export default function Expertise() {
               </article>
             ))}
           </div>
-
         </div>
       </div>
     </section>

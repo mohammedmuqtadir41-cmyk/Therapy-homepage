@@ -1,6 +1,7 @@
 const links = [
   ["ABOUT", "#about"],
   ["APPROACH", "#approach"],
+  ["OFFICE", "#office"],
   ["SPECIALTIES", "#specialties"],
   ["EMDR", "#emdr"],
   ["FAQS", "#faqs"],
