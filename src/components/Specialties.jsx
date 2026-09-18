@@ -1,23 +1,33 @@
 const specialties = [
   {
+    title: "Anxiety & Panic",
+    description:
+      "Support for racing thoughts, constant worry, panic, physical tension, and the feeling that your mind never quite switches off.",
+  },
+  {
     title: "Trauma",
     description:
-      "We don’t always know when and how we’ve experienced trauma. In therapy, we’ll work together to help you process your past, understand what’s causing you to stay “stuck,” and regain a sense of safety, control, and hope. You don’t have to carry your burdens alone.",
+      "Careful, paced therapy for single-incident and complex trauma, including long-standing patterns connected to childhood, relationships, or chronic stress.",
+  },
+  {
+    title: "Burnout & Perfectionism",
+    description:
+      "For people who are used to achieving, performing, and pushing through, but are beginning to realize that the pace is no longer sustainable.",
   },
   {
     title: "EMDR",
     description:
-      "Eye Movement Desensitization and Reprocessing (EMDR) is a powerful therapeutic technique that helps process and heal trauma by reworking how painful memories are stored in your brain. This allows you to find relief and move toward lasting healing.",
+      "A trauma-focused approach that can help process distressing experiences and reduce the emotional intensity connected to painful memories.",
   },
   {
-    title: "Dissociation",
+    title: "Emotional Regulation",
     description:
-      "The feeling of losing time, hearing conflicting thoughts, or feeling disconnected from yourself can be difficult to understand. Therapy can help you explore these experiences with safety, curiosity, and compassion.",
+      "Learn to recognize emotional patterns, understand what your nervous system is communicating, and develop steadier ways of responding.",
   },
   {
-    title: "Special Needs Parenting",
+    title: "Relationships & Self-Worth",
     description:
-      "Parenting a child with special needs presents unique challenges. Therapy can provide a supportive space to process stress, strengthen connection, and develop sustainable ways to navigate the demands of caregiving.",
+      "Explore how past experiences influence connection, boundaries, confidence, attachment, and the way you relate to yourself and others.",
   },
 ];
 
@@ -27,35 +37,38 @@ export default function Specialties() {
       <div className="mx-auto grid max-w-[1200px] gap-16 md:grid-cols-3 md:gap-12 lg:gap-20">
 
         <div>
-          <h2 className="font-serif text-5xl font-normal leading-[1.1] tracking-[-1px] text-[#17324d] md:text-6xl">
-            Our{" "}
-            <span className="italic text-[#83b9bd]">
-              specialties
-            </span>
+          <h2 className="font-serif text-5xl font-normal leading-[1.05] tracking-[-1px] text-[#243b36] md:text-6xl">
+            What we can
             <br />
-            include...
+            <span className="italic text-[#8fa69d]">
+              work through
+            </span>
           </h2>
         </div>
 
         <div className="grid gap-x-12 gap-y-20 md:col-span-2 md:grid-cols-2 lg:gap-x-16 lg:gap-y-24">
+
           {specialties.map((specialty) => (
             <article key={specialty.title}>
-              <h3 className="font-serif text-3xl font-normal text-[#17324d]">
+
+              <h3 className="font-serif text-3xl font-normal text-[#243b36]">
                 {specialty.title}
               </h3>
 
-              <p className="mt-7 text-[14px] leading-7 text-[#17324d] md:text-[15px] md:leading-8">
+              <p className="mt-7 text-[14px] leading-7 text-[#243b36] md:text-[15px] md:leading-8">
                 {specialty.description}
               </p>
 
               <a
                 href="#"
-                className="mt-6 inline-block border-b border-[#404040] pb-2 text-[11px] tracking-[2px] text-[#404040]"
+                className="mt-6 inline-block border-b border-[#243b36] pb-2 text-[11px] tracking-[2px] text-[#243b36]"
               >
                 LEARN MORE
               </a>
+
             </article>
           ))}
+
         </div>
 
       </div>
