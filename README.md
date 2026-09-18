@@ -16,7 +16,7 @@ The assignment required:
 
 - Cloning the original homepage structure and layout
 - Redesigning the page with a new theme
-- Replacing the original copy and imagery
+- Replacing the original copy and images
 - Maintaining the overall layout flow of the original homepage
 - Creating one completely new custom section that was not present in the original template
 
