@@ -1,6 +1,7 @@
 import AppointmentCTA from "@/components/AppointmentCTA";
 import ContactSection from "@/components/ContactSection";
 import Expertise from "@/components/Expertise";
+import FAQSection from "@/components/FAQSection";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
@@ -19,10 +20,11 @@ export default function Home() {
       <IntroSection />
       <WhoWeHelp />
       <StorySection />
-      <Expertise />
+      {/* <Expertise /> */}
       <HowWeWork />
       <HonoringStory />
       <Specialties />
+      <FAQSection />
       <AppointmentCTA />
       <ContactSection />
       <Footer />

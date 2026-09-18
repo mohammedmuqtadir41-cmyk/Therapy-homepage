@@ -3,23 +3,22 @@
 import { useState } from "react";
 
 const navLinks = [
-  "ABOUT",
-  "APPROACH",
-  "SPECIALTIES",
-  "EMDR",
-  "FAQS",
+  ["ABOUT", "#about"],
+  ["APPROACH", "#approach"],
+  ["SPECIALTIES", "#specialties"],
+  ["EMDR", "#emdr"],
+  ["FAQS", "#faqs"],
 ];
 
 export default function Header() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="relative z-50 w-full bg-[#f7f4ee]">
-      <div className="mx-auto flex min-h-[105px] max-w-[1280px] items-center justify-between px-6 md:min-h-[125px] md:px-10 lg:px-12">
+    <header className="relative z-50 bg-[#f7f4ee]">
+      <div className="mx-auto flex min-h-[105px] max-w-[1280px] items-center justify-between px-6 md:min-h-[120px] md:px-10 lg:px-12">
 
-        {/* Brand */}
         <a href="#" className="flex flex-col">
-          <span className="font-serif text-[27px] leading-none tracking-[-1px] text-[#243b36] sm:text-[32px] md:text-[36px]">
+          <span className="font-serif text-[27px] leading-none tracking-[-1px] text-[#243b36] sm:text-[32px] md:text-[35px]">
             Dr. Maya Reynolds
           </span>
 
@@ -28,27 +27,25 @@ export default function Header() {
           </span>
         </a>
 
-        {/* Desktop */}
         <nav className="hidden items-center gap-6 lg:flex xl:gap-8">
-          {navLinks.map((link) => (
+          {navLinks.map(([label, href]) => (
             <a
-              key={link}
-              href="#"
-              className="text-[11px] tracking-[1.5px] text-[#243b36] transition-opacity hover:opacity-60"
+              key={label}
+              href={href}
+              className="text-[10px] tracking-[1.7px] text-[#243b36] transition-opacity hover:opacity-50"
             >
-              {link}
+              {label}
             </a>
           ))}
 
           <a
-            href="#"
-            className="rounded-full border border-[#243b36] px-7 py-3 text-[11px] tracking-[1.5px] text-[#243b36] transition hover:bg-[#243b36] hover:text-white"
+            href="#contact"
+            className="rounded-full border border-[#243b36] px-7 py-3 text-[10px] tracking-[1.7px] text-[#243b36] transition hover:bg-[#243b36] hover:text-white"
           >
             CONTACT
           </a>
         </nav>
 
-        {/* Mobile */}
         <button
           type="button"
           onClick={() => setOpen(!open)}
@@ -64,27 +61,25 @@ export default function Header() {
       </div>
 
       {open && (
-        <nav className="border-t border-[#ddd6ca] bg-[#f7f4ee] px-6 py-6 lg:hidden">
-          <div className="flex flex-col">
-            {navLinks.map((link) => (
-              <a
-                key={link}
-                href="#"
-                onClick={() => setOpen(false)}
-                className="border-b border-[#ddd6ca] py-5 text-[11px] tracking-[2px] text-[#243b36]"
-              >
-                {link}
-              </a>
-            ))}
-
+        <nav className="border-t border-[#ddd6ca] bg-[#f7f4ee] px-6 py-5 lg:hidden">
+          {navLinks.map(([label, href]) => (
             <a
-              href="#"
+              key={label}
+              href={href}
               onClick={() => setOpen(false)}
-              className="mt-6 self-start rounded-full border border-[#243b36] px-7 py-3 text-[11px] tracking-[2px] text-[#243b36]"
+              className="block border-b border-[#ddd6ca] py-5 text-[11px] tracking-[2px] text-[#243b36]"
             >
-              CONTACT
+              {label}
             </a>
-          </div>
+          ))}
+
+          <a
+            href="#contact"
+            onClick={() => setOpen(false)}
+            className="mt-6 inline-block rounded-full border border-[#243b36] px-7 py-3 text-[10px] tracking-[2px] text-[#243b36]"
+          >
+            CONTACT
+          </a>
         </nav>
       )}
     </header>
